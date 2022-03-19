@@ -38,6 +38,7 @@ nav h1
     top: 1%;
     font-size: 1rem;
     font-family: monospace;
+	font-weight: 800;
 }
 
 .menu li{
@@ -212,11 +213,205 @@ nav h1
 	bottom: 15px;
 	left: 15px;
 	height: 1px;
-	background: rgb(214,98,13);
 	background: rgba(214,98,13,.8);
 	width: 0;
 	/* fonction d'animation */
 	animation: timeliner 32s infinite;
+}
+
+/*fin section*/
+
+
+
+/*page*/
+.page 
+{
+	width: 90%;
+	margin: 5% auto;
+	padding: 3% auto;
+}
+
+.page .corps
+{
+	
+	display: flex;
+	position: relative;
+	margin-top: 10%;
+}
+
+.page .corps img
+{
+	width: 50%;
+	height: 600px;
+
+}
+
+.page .corps .corps2
+{
+	position: absolute;
+	left: 25%;
+	top: 50%;
+	text-align: center;
+}
+
+.page .corps .corps2 button
+{
+	width: 100%;
+	font-size: 2rem;
+	font-family: monospace;
+	color: rgb(240, 18, 92);
+	font-weight: 900;
+	border-radius: 5px;
+	
+}
+
+.page .corps .corps2 h1
+{
+	color: rgb(240, 18, 92);
+}
+
+.page .corps .corps3 button
+{
+	width: 100%;
+	font-size: 2rem;
+	font-family: monospace;
+	color:whitesmoke ;
+	font-weight: 900;
+	border-radius: 5px;
+	background-color:rgb(240, 18, 92) ;
+	
+}
+
+.page .corps .corps3
+{
+	position: absolute;
+	left: 60%;
+	top: 50%;
+	text-align: center;
+}
+
+/*fin page*/
+
+
+/*les articles*/
+.text
+{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.text h1
+{
+	margin-top: 5%;
+	font-size: 3rem;
+	font-style: italic;
+}
+
+.text button
+{
+	width: 20%;
+	border-radius: 5px;
+	outline: none;
+	margin-left: 40%;
+	border: 1px solid rgb(240, 18, 92) ;
+}
+
+
+.text button a
+{
+	text-decoration: none;
+	font-family: monospace;
+	font-size: 1rem;
+	font-weight: 700;
+	color: rgb(240, 18, 92);
+}
+
+
+.nouveau
+{
+	display: flex;
+	margin-top: 5%;
+	width: 100%;
+}
+
+.nouveau img
+{
+	width: 25%;
+	height: 300px;
+}
+
+.cat
+{
+	display: flex;
+	margin-top: 10% ;
+	width: 100%;
+}
+
+.cat a{
+	text-decoration: none;
+	color: whitesmoke;
+	font-family: monospace;
+	font-size: 2rem;
+	font-weight: 800;
+}
+.cat .cat1
+{
+	width: 20%;
+	height: 300px;
+	background: url("../image_shop/images\ \(2\).jpg");
+	background-size: cover;
+	text-align: center;
+	margin: auto;
+}
+
+.cat .cat2
+{
+	width: 20%;
+	height: 300px;
+	background: url("../image_shop/FB_IMG_16476959875158970.jpg");
+	background-size: cover;
+	text-align: center;
+	margin: auto;
+}
+
+.cat .cat3
+{
+	width: 20%;
+	height: 300px;
+	background: url("../image_shop/téléchargement213.jpeg");
+	background-size: cover;
+	text-align: center;
+	margin: auto;
+}
+
+.cat .cat4
+{
+	width: 20%;
+	height: 300px;
+	background: url("../image_shop/images24.jpeg");
+	background-size: cover;
+	text-align: center;
+	margin: auto;
+}
+
+/* fin du css pour les articles*/
+
+/*les pieds*/
+
+/*fin du css pour le footer*/
+
+footer
+{
+	margin-top: 5%;
+	text-align: center;
+	background: pink;
+}
+footer a
+{
+	text-decoration: none;
+	color: rgb(248, 23, 98);
+	margin: 3%;
 }
 
 @keyframes timeliner {
