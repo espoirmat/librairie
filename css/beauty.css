@@ -1,0 +1,103 @@
+*{
+    padding: 0%;
+    margin: 0% ;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav
+{
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    align-content: space-between;
+    border: 1px solid black;
+    position: sticky;
+}
+
+nav h1
+{
+    font-size: 2rem;
+}
+ nav .menu
+{
+    height: 60%;
+    width: 70%;
+    margin: 2%;
+    padding: 1%;
+    list-style: none;
+    display: flex;
+    position: absolute;
+    left: 25%;
+    top: 1%;
+}
+
+.menu li{
+   
+    width: 20%;
+    height: 100%;
+}
+
+.menu li a:link, .menu li a:visited
+{
+    display: block;
+    color: black;
+    background: rgba(245, 243, 243, 0.425);
+    padding: 3%;
+    border-radius: 5px;
+    border: 1px solid pink;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.menu li:hover
+{
+    background-color: rgba(255, 192, 203, 0.637);
+}
+
+.menu li:active
+{
+    background-color: rgba(10, 80, 80, 0.212);
+}
+
+.menu .sous
+{
+    text-decoration: none;
+    list-style: none;
+    padding: 0%;
+    display: none;
+    position: absolute;
+    margin: 0%;
+}
+
+.menu .sous li
+{
+    float: none;
+    margin: 0;
+    padding: 0%;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+.menu .sous li a:link, .menu .sous li a:visited
+{
+    display: block;
+    text-decoration: none;
+    color: black;
+
+}
+
+.menu .sous li:hover
+{
+    background-color: pink;
+}
+
+.menu li:hover .sous
+{
+   display: block;
+}
