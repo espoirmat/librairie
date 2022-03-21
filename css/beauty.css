@@ -595,7 +595,7 @@ input[type="submit"]:hover
     text-decoration: underline;
 
 }
-/*les pages*/
+/*les pages robes*/
 .robe_ban
 {
 	width: 100%;
@@ -627,6 +627,9 @@ input[type="submit"]:hover
 	margin: 0% auto;
 	display: flex;
 	flex-wrap: wrap;
+	align-content: flex-start;
+    justify-content: center;
+    align-items: center;
 	
 }
 
@@ -656,6 +659,77 @@ input[type="submit"]:hover
 }
 
 .robes .robe_sous button:hover
+{
+	width: 50%;
+	font-size: 2rem;
+}
+
+/*fin*/
+
+/*les pages jupes*/
+.robe_ban
+{
+	width: 100%;
+	height: 300px;
+	background: url(../image_shop/ban-rob.jpg) no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding-top: 7%;
+	margin: 1% 0%;
+	
+}
+
+.robe_ban h1
+{
+	color: #555;
+	font-family: monospace;
+	font-size: 5rem;
+	font-style: italic;
+}
+
+.robe_ban h1 em
+{
+	color: palevioletred;
+}
+
+.jupes
+{
+	width: 90%;
+	margin: 0% auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+    justify-content: center;
+    align-items: center;
+	
+}
+
+.jupes .robe_sous img
+{
+	width: 100%;
+	height: 60%;
+}
+
+.jupes .robe_sous
+{
+	width: 30%;
+	margin: 1.5%;
+	text-align: center;
+}
+
+.jupes .robe_sous button
+{
+	background-color: pink;
+	width: 40%;
+	border-radius: 5px;
+	color: whitesmoke;
+	font-size: 1rem;
+	border: palevioletred;
+	outline: none;
+	transition: all 1s ease-in;
+}
+
+.jupes .robe_sous button:hover
 {
 	width: 50%;
 	font-size: 2rem;
