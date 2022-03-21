@@ -17,7 +17,7 @@ nav
     display: flex;
     align-content: space-between;
     position: sticky;
-	margin-bottom: 5%;
+	margin-bottom: 2%;
 }
 
 nav h1
@@ -388,7 +388,7 @@ nav h1
 {
 	width: 20%;
 	height: 300px;
-	background: url("../image_shop/images24.jpeg");
+	background: url("../image_shop/robe6.jpg");
 	background-size: cover;
 	text-align: center;
 	margin: auto;
@@ -396,12 +396,13 @@ nav h1
 
 /* fin du css pour les articles*/
 
-/*les pieds*/
 
-/*fin du css pour le footer*/
+
+/*css pour le footer*/
 
 footer
 {
+	width: 100%;
 	margin-top: 5%;
 	text-align: center;
 	background: pink;
@@ -594,8 +595,73 @@ input[type="submit"]:hover
     text-decoration: underline;
 
 }
+/*les pages*/
+.robe_ban
+{
+	width: 100%;
+	height: 300px;
+	background: url(../image_shop/ban-rob.jpg) no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding-top: 7%;
+	margin: 1% 0%;
+	
+}
 
+.robe_ban h1
+{
+	color: #555;
+	font-family: monospace;
+	font-size: 5rem;
+	font-style: italic;
+}
 
+.robe_ban h1 em
+{
+	color: palevioletred;
+}
+
+.robes
+{
+	width: 90%;
+	margin: 0% auto;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.robes .robe_sous img
+{
+	width: 100%;
+	height: 60%;
+}
+
+.robes .robe_sous
+{
+	width: 30%;
+	margin: 1.5%;
+	text-align: center;
+}
+
+.robes .robe_sous button
+{
+	background-color: pink;
+	width: 40%;
+	border-radius: 5px;
+	color: whitesmoke;
+	font-size: 1rem;
+	border: palevioletred;
+	outline: none;
+	transition: all 1s ease-in;
+}
+
+.robes .robe_sous button:hover
+{
+	width: 50%;
+	font-size: 2rem;
+}
+
+/*fin*/
 @keyframes timeliner {
 	0%, 25%, 50%, 75%, 100%	{ width: 0;		}
 	20%, 45%, 70%, 90%		{ width: 640px;	}
