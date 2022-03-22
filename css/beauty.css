@@ -890,6 +890,62 @@ input[type="submit"]:hover
 	}
 	/*fin responsive pour cat image*/
 
+	/* responsive pour page secondaire*/
+	.robe_ban
+	{
+		width: 96%;
+		height: 200px;
+		margin: 0% auto;
+		
+	}
+	
+	.robe_ban h1
+	{
+		font-size: 2rem;
+	}
+	
+	.robes .robe_sous
+	{
+		width: 30%;
+		margin: 1.5%;
+		text-align: center;
+	}
+	
+	.robes .robe_sous button
+	{
+		width: 40%;
+		font-size: 0.5rem;
+	}
+	.robes .robe_sous button:hover
+	{
+		width: 70%;
+		font-size: 1rem;
+	}
+	
+	/*les pages jupes*/
+	.robe_ban
+	{
+		width: 96%;
+		height: 200px;
+		
+	}
 
+	.robe_ban h1
+	{
+		font-size: 2rem;
+	}
+
+	.jupes .robe_sous button
+	{
+		font-size: 0.5rem;
+	}
+
+	.jupes .robe_sous button:hover
+	{
+		width: 70%;
+		font-size: 1rem;
+	}
+
+	/*fin responsive pour cat image*/
 	
 }
