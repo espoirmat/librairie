@@ -241,7 +241,6 @@ nav  .a a
 
 .page .corps
 {
-	
 	display: flex;
 	position: relative;
 	margin-top: 10%;
@@ -367,7 +366,7 @@ nav  .a a
 {
 	width: 20%;
 	height: 300px;
-	background: url("../image_shop/images\ \(2\).jpg");
+	background: url("../image_shop/JUPE1.jpg");
 	background-size: cover;
 	text-align: center;
 	margin: auto;
@@ -377,7 +376,7 @@ nav  .a a
 {
 	width: 20%;
 	height: 300px;
-	background: url("../image_shop/FB_IMG_16476959875158970.jpg");
+	background: url("../image_shop/PAT1.jpg");
 	background-size: cover;
 	text-align: center;
 	margin: auto;
@@ -768,6 +767,7 @@ input[type="submit"]:hover
 	/* fin responsive pour nav*/
 
 	/*responsive pour slidershow*/
+
 	#slideshow {
 		width: 96%;
 	
@@ -800,4 +800,96 @@ input[type="submit"]:hover
 	}
 
 	/* fin responsive pour slidershow*/
+
+	/* responsive pour page*/
+	.page .corps
+	{
+		flex-wrap: wrap;
+	}
+	.page .corps img
+	{
+		width: 100%;
+		height: 300px;
+		margin-top: 5%;
+	
+	}
+
+		.page .corps .corps2
+	{
+		left: 25%;
+		top: 20%;
+	
+	}
+
+	.page .corps .corps3
+	{
+		left: 25%;
+		top: 70%;
+	}
+
+	/* fin responsive pour page*/
+
+	/* responsive pour text*/
+	.text h1
+	{
+		font-size: 2rem;
+	}
+
+	.text button
+	{
+		width: 25%;
+	}
+
+	/*fin responsive pour text*/
+
+	/*responsive pour nouveau image*/
+	.nouveau
+	{
+		flex-wrap: wrap;
+	}
+
+	.nouveau img
+	{
+		width: 49%;
+		height: 150px;
+		margin: 0.5%;
+	}
+	/*fin responsive pour nouveau image*/
+
+		/*fin responsive pour text*/
+
+	/*responsive pour cat image*/
+	.cat
+	{	
+		flex-wrap: wrap;
+	}
+	
+
+	.cat .cat1
+	{
+		width: 50%;
+		height: 150px;
+	}
+	
+	.cat .cat2
+	{
+		width: 50%;
+		height: 150px;
+	}
+	
+	.cat .cat3
+	{
+		width: 50%;
+		height: 150px;
+	}
+	
+	.cat .cat4
+	{
+		width: 50%;
+		height: 150px;
+	}
+	/*fin responsive pour cat image*/
+
+
+	
 }
