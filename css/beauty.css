@@ -768,6 +768,10 @@ input[type="submit"]:hover
 	/* fin responsive pour nav*/
 
 	/*responsive pour slidershow*/
+	#slideshow {
+		width: 96%;
+	
+	}
 	#slideshow .container {
 		width: 250px;
 		height: 150px;
