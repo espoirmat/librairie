@@ -769,24 +769,24 @@ input[type="submit"]:hover
 
 	/*responsive pour slidershow*/
 	#slideshow .container {
-		width: 300px;
+		width: 250px;
 		height: 150px;
 	}
 	#slideshow .container:after {
 		width: 50%;
 	}
 	#slideshow figure {
-		width: 300px;
+		width: 250px;
 	}
 	#slideshow figure img 
 	{
 		height: 150px ;
-		width: 300px;
+		width: 250px;
 	}
 
 	#slideshow figcaption
 	{
-		width: 300px;
+		width: 250px;
 		padding-bottom: 2px;
 		
 	}
