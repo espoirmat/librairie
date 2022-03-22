@@ -10,6 +10,7 @@ body
 }
 
 /* css pour nav*/
+
 nav
 {
     width: 100%;
@@ -759,9 +760,77 @@ input[type="submit"]:hover
 /*debut de la responsive*/
 
 
-	@media all and (max-width: 991px)
+	@media all and (max-width: 900px)
 {
 	/*responsive pour nav*/
+ 
+
+	nav .nav .menu
+	{
+		display: none;
+	}
+	.nav li
+	{
+		
+        width: 30px;
+        display: flex;
+		position: absolute;
+		top: 1%;
+		right: 4%;
+        font-size: 40px;
+        color: black;
+        cursor: pointer;
+	}
+		.nav li a:link, .nav li a:visited
+		{
+			display: flex;
+			color: black;
+			text-align: center;
+			text-decoration: none;
+
+		}
+
+		.nav li:hover
+		{
+			background-color: rgba(255, 192, 203, 0.637);
+		}
+
+		.nav li:active
+		{
+			background-color: rgba(10, 80, 80, 0.212);
+		}
+
+		.nav .menu
+	{
+		display: flex;
+		flex-direction: column;
+		text-decoration: none;
+		list-style: none;
+		padding: 4%;
+		display: none;
+		margin: 0%;
+	}
+
+.nav .menu li
+{
+    display: inline;
+    
+}
+
+.nav .menu li a:link, .nav .menu li a:visited
+{
+    display: block;
+    text-decoration: none;
+    color: black;
+
+}
+
+.nav li:hover .menu
+{
+   display: flex;
+   flex-direction: column;
+}
+
 
 
 	/* fin responsive pour nav*/
