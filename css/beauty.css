@@ -25,6 +25,14 @@ nav h1
     font-size: 2rem;
     color: pink;
 }
+
+nav  .a a 
+{
+	color: black;
+	text-decoration: none;
+	font-size: 2rem;
+	margin: 0%;
+}
  nav .menu
 {
     height: 60%;
@@ -150,7 +158,8 @@ nav h1
 /* on prévoit un petit espace gris pour la timeline */
 #slideshow .container:after {
 	position:absolute;
-	bottom: 0; left:0;
+	bottom: 0;
+	left:0;
 	content: " ";
 	width: 100%;
 	height: 1px;
@@ -740,7 +749,7 @@ input[type="submit"]:hover
 	0%, 25%, 50%, 75%, 100%	{ width: 0;		}
 	20%, 45%, 70%, 90%		{ width: 640px;	}
 }
-/* fonction d'animation, n'oubliez pas de prefixer ! */
+/* fonction d'animation! */
 @keyframes slider {
 	0%, 20%, 100%	{ left: 0 }
 	25%, 45%		{ left: -100% }
@@ -748,3 +757,38 @@ input[type="submit"]:hover
 	75%, 95%		{ left: -300% }
 }
 
+/*debut de la responsive*/
+
+
+	@media all and (max-width: 991px)
+{
+	/*responsive pour nav*/
+
+
+	/* fin responsive pour nav*/
+
+	/*responsive pour slidershow*/
+	#slideshow .container {
+		width: 300px;
+		height: 150px;
+	}
+
+	#slideshow figure img 
+	{
+		height: 150px ;
+		width: 300px;
+	}
+
+	#slideshow figcaption
+	{
+		width: 300px;
+		padding-bottom: 2px;
+		
+	}
+
+	#timeline {
+		background: transparent;
+	}
+
+	/* fin responsive pour slidershow*/
+}
