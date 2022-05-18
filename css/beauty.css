@@ -37,6 +37,11 @@ nav{
     color: pink;
 	display: inline;
 }
+
+.a a i
+{
+   color: transparent;
+}
 .sidenav a
 {
 	display: none;
@@ -1071,6 +1076,12 @@ a
 {
  font-size: 2rem;
 }
+
+ .a a i
+	{
+		margin-left: 2%;
+		color: #111;
+	}
 .sidenav a:hover {
   color: #111;
 }
