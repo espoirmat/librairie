@@ -10,8 +10,11 @@ body
 }
 
 /* css pour nav*/
-
-nav
+nav{
+	display: flex;
+	width: 100%;
+}
+.sidenav
 {
     width: 100%;
     padding: 2%;
@@ -21,20 +24,32 @@ nav
 	margin-bottom: 2%;
 }
 
-nav h1
+.h1
 {
-    font-size: 2rem;
+	
+	position: absolute;
+	top: 1%;
+	left: 2%;
+}
+.h1 h1
+{
+    font-size: 3rem;
     color: pink;
+	display: inline;
+}
+.sidenav a
+{
+	display: none;
 }
 
-nav  .a a 
+ .sidenav .a a 
 {
 	color: black;
 	text-decoration: none;
 	font-size: 2rem;
 	margin: 0%;
 }
- nav .menu
+ .sidenav .menu
 {
     height: 60%;
     width: 70%;
@@ -220,7 +235,7 @@ nav  .a a
 	position: absolute;
 	background: #999;
 	bottom: 15px;
-	left: 15px;
+	left: 13%;
 	height: 1px;
 	background: rgba(214,98,13,.8);
 	width: 0;
@@ -765,81 +780,47 @@ input[type="submit"]:hover
 	/*responsive pour nav*/
  
 
-	nav .nav .menu
+	 .menu
 	{
 		display: none;
 	}
-	.nav li
+	 ul
 	{
 		
         width: 30px;
         display: flex;
+		flex-direction: column;
 		position: absolute;
 		top: 1%;
 		right: 4%;
+		padding-bottom: 20%;
         font-size: 40px;
-        color: black;
+        color: white;
         cursor: pointer;
 	}
-		.nav li a:link, .nav li a:visited
-		{
-			display: flex;
-			flex-direction: column;
-			color: black;
-			text-decoration: none;
 
-		}
+	ul li
+	{
+		color: whitesmoke;
+	}
 
-		.nav li:hover
-		{
-			background-color: rgba(255, 192, 203, 0.637);
-		}
-
-		.nav li:active
-		{
-			background-color: rgba(10, 80, 80, 0.212);
-		}
-
-
-		.nav li:hover  .nav .menu
-		{
+	.menu li:hover .sous ul
+	{
+		display: flex;
 		flex-direction: column;
-		position: absolute;
-		right: 5%;
-		top: 5%;
-		font-size: 0.5rem;
+		width: 100%;
+		color: whitesmoke;
+	}
+
+	.menu li a:link, .menu li a:visited
+		{
+			color: white;
+			background: rgba(0, 0, 0, 0.356);
+
+
 		}
-
-.nav .menu li{
-  
-   width: 100%;
-   height: 100%;
-}
-
-.menu li a:link, .menu li a:visited
-{
-   display: flex;
-   color: black;
-   background: rgba(245, 243, 243, 0.425);
-   padding: 1%;
-   border-radius: 5px;
-   border: 1px solid pink;
-   text-align: center;
-   text-decoration: none;
-
-}
-
-.menu li:hover
-{
-   background-color: rgba(255, 192, 203, 0.637);
-}
-
-.menu li:active
-{
-   background-color: rgba(10, 80, 80, 0.212);
-}
-
-
+		
+	
 	/* fin responsive pour nav*/
 
 	/*responsive pour slidershow*/
@@ -967,11 +948,12 @@ input[type="submit"]:hover
 	/*fin responsive pour cat image*/
 
 	/* responsive pour page secondaire*/
-	.robe_ban
+	 .robe_ban
 	{
-		width: 96%;
+		width: 98%;
 		height: 200px;
-		margin: 0% auto;
+		margin: 1%;
+		background-size: contain ;
 		
 	}
 	
@@ -1024,5 +1006,93 @@ input[type="submit"]:hover
 	}
 
 	/*fin responsive pour cat image*/
+
+	.center
+	{
+		width: 80%;
+		margin: auto;
+	}
+
+	footer .contact a
+	{
+		font-size: 1rem;
+	}
 	
+}
+
+
+
+@media all and (max-width: 900px) {
+	/* Sidenav menu */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 3%;
+  left: -250px;
+  background-color: #e8e8e8;
+  padding-top: 100px;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 5%;
+  margin-top: 0;
+}
+
+.menu li:hover .sous li
+{
+	color: whitesmoke;
+}
+/* Sidenav menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+a
+{
+	font-size: 40px;
+	color: black;
+}
+.h1 
+{
+	
+	position: absolute;
+	top: 0%;
+	left: 60%;
+	font-size: 1rem;
+}
+
+.h1 .h1
+{
+ font-size: 2rem;
+}
+.sidenav a:hover {
+  color: #111;
+}
+
+/* Active class */
+.sidenav.active {
+  left: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 36px;
+}
+
+.burger-icon span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
 }
