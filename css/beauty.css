@@ -104,4 +104,9 @@ nav a:hover
     {
         height: 100px;
     }
+
+    nav a:hover
+    {
+        font-size: 1rem;
+    }
 }
