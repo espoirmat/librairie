@@ -8,7 +8,6 @@ nav
 {
     display: flex;
     width: 100%;
-    position: fixed;
     justify-content: right;
 }
 
@@ -16,9 +15,20 @@ nav a
 {
     color: white;
     font-size: 1.5rem;
-    margin: 1%;
+    width: 10%;
+    text-align: center;
+    text-decoration: none;
+    font-family: monospace;
 }
 
+
+nav a:hover
+{
+    color: #F9839B;
+    font-size: 1.7rem;
+    border-radius: 5px;
+    background-color:#3206FF ;
+}
 
 
 /*
