@@ -86,7 +86,7 @@ nav a:hover
     nav
     {
        
-        justify-content: center;
+        justify-content: space-around;
     }
      nav a
     {
@@ -99,5 +99,9 @@ nav a:hover
     {
         width: 48%;
         margin: 1%;
+    }
+    .page .manga .contenue a img
+    {
+        height: 100px;
     }
 }
