@@ -33,7 +33,52 @@ nav a:hover
     background-color:#3206FF ;
 }
 
+.page
+{
+    width: 96%;
+    margin: auto;
+    background-color: #3406ff2c;
+}
 
+
+.page h1
+{
+    color: whitesmoke;
+    font-style: italic;
+    margin: 5%;
+}
+
+
+.page .manga
+{
+    width: 100%;
+    color: whitesmoke;
+}
+
+.page .manga h4
+{
+    text-align: center;
+}
+
+.page .manga .contenue
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.page .manga .contenue a 
+{
+    width: 23%;
+    margin: 1%;
+}
+
+.page .manga .contenue a img
+{
+    width: 100%;
+    height: 200px;
+}
 /*
 .container {
     display: flex;
